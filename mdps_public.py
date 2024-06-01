@@ -54,7 +54,7 @@ if (selected == 'Aeration Prediction'):
     with col1:
         Watering = st.text_input('Watering')
 
-    Pedigree Function value')
+   # Pedigree Function value')
     
 
     
