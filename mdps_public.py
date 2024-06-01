@@ -12,9 +12,9 @@ from streamlit_option_menu import option_menu
 
 # loading the saved models
 
-diabetes_model = pickle.load(open('mode_green_Air.sav', 'rb'))
+diabetes_model = pickle.load(open('mode_green_Air.file', 'rb'))
 
-heart_disease_model = pickle.load(open('model_green_water.sav', 'rb'))
+heart_disease_model = pickle.load(open('model_green_water.file', 'rb'))
 
 parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 
