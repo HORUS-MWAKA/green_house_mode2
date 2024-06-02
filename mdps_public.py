@@ -12,9 +12,9 @@ from streamlit_option_menu import option_menu
 
 # loading the saved models
 
-diabetes_model = pickle.load(open('logic_watering_model.sav', 'rb'))
+logic_watering_model = pickle.load(open('logic_watering_model.sav', 'rb'))
 
-heart_disease_model = pickle.load(open('logic_aeration_model.sav', 'rb'))
+logic_aeration_model = pickle.load(open('logic_aeration_model.sav', 'rb'))
 
 parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 
@@ -61,7 +61,7 @@ if (selected == 'Watering Prediction'):
     # creating a button for Prediction
     
     if st.button('Watering Test Result'):
-        diab_prediction = diabetes_model.predict([[Temperature, Humidity, Moisture, Watering]])
+        diab_prediction = logic_watering_model.predict([[Temperature, Humidity, Moisture, Watering]])
         
         if (diab_prediction[0] == 1):
           diab_diagnosis = 'Watering Needed'
@@ -102,7 +102,7 @@ if (selected == 'Aeration Prediction'):
     # creating a button for Prediction
     
     if st.button('Aeration Test Result'):
-        heart_prediction = heart_disease_model.predict([[Temperature, Humidity, Moisture, Aeration]])                          
+        heart_prediction = logic_aeration_model.predict([[Temperature, Humidity, Moisture, Aeration]])                          
         
         if (heart_prediction[0] == 1):
           heart_diagnosis = 'Aeration Needed'
