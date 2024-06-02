@@ -12,12 +12,11 @@ from streamlit_option_menu import option_menu
 
 # loading the saved models
 
-diabetes_model = pickle.load(open('mode_green_Air', 'rb'))
+diabetes_model = pickle.load(open('mode_aeration_saved', 'rb'))
 
-heart_disease_model = pickle.load(open('model_green_water', 'rb'))
+heart_disease_model = pickle.load(open('mode_watering_saved', 'rb'))
 
 parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
-
 
 
 # sidebar for navigation
