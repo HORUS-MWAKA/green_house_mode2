@@ -22,7 +22,7 @@ def show_entry_fields():
 #master.title("Greenhouse Predictive Model")
 st.title('Greenhouse Predictive Model')
 
-label = Label(master,text = "Greenhouse Predictive Model"
+label = Label(st.text = "Greenhouse Predictive Model"
                , bg = "black", fg = "white"). \
                     grid(row=0,columnspan=2)
 
