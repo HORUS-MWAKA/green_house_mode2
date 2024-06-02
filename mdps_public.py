@@ -19,7 +19,8 @@ def show_entry_fields():
         Label(master, text="Garden Waterig Needed").grid(row=6)
 
 #master = Tk()
-master.title("Greenhouse Predictive Model")
+#master.title("Greenhouse Predictive Model")
+st.title('Greenhouse Predictive Model')
 
 label = Label(master,text = "Greenhouse Predictive Model"
                , bg = "black", fg = "white"). \
