@@ -48,17 +48,4 @@ if (selected == 'Diabetes Prediction'):
         Watering = st.text_input('Watering')
     
     
-    # code for Prediction
-    diab_diagnosis = ''
-    
-    # creating a button for Prediction
-    
-    if st.button('Diabetes Test Result'):
-        diab_prediction = diabetes_model.predict([[Temperature, Humidity, Moisture, Watering]])
-        
-        if (diab_prediction[0] == 1):
-          diab_diagnosis = 'The person is diabetic'
-        else:
-          diab_diagnosis = 'The person is not diabetic'
-        
-    st.success(diab_diagnosis)
+
