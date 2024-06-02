@@ -7,7 +7,7 @@ from streamlit_option_menu import option_menu
 
 diabetes_model = pickle.load(open('heart_disease_model.sav', 'rb'))
 
-#heart_disease_model = pickle.load(open('mode_watering_saved', 'rb'))
+heart_disease_model = pickle.load(open('logic_green_model.sav', 'rb'))
 
 parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 
