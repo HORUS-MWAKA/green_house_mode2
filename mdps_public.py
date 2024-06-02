@@ -16,7 +16,7 @@ from streamlit_option_menu import option_menu
 
     
     # page title
-st.title('Diabetes Prediction using ML')
+st.title('Green House ML Model')
     
     
     # getting the input data from the user
