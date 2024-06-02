@@ -20,7 +20,7 @@ st.title('Diabetes Prediction using ML')
     
     
     # getting the input data from the user
-col1, col2, col3 = st.columns(3)
+col1, col2 = st.columns(3)
 
 with col1:
     Temperature = st.text_input('Temperature')
@@ -28,10 +28,10 @@ with col1:
 with col2:
     Humidity = st.text_input('Humidity')
 
-with col3:
+with col1:
     Moisture = st.text_input('Moisture')
 
-with col1:
+with col2:
     Watering = st.text_input('Watering')
     
     
