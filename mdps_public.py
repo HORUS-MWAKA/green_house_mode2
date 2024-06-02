@@ -26,8 +26,7 @@ with st.sidebar:
     selected = option_menu('GreenHouse Predictive Model',
                           
                           ['Watering Prediction',
-                           'Aeration Prediction',
-                           'Parkinsons Prediction'],
+                           'Aeration Prediction',],
                           icons=['water','sun','person'],
                           default_index=0)
     
