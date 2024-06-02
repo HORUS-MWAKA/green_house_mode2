@@ -6,15 +6,16 @@ Created on Sun May  8 21:01:15 2022
 """
 
 import pickle
+import joblib
 import streamlit as st
 from streamlit_option_menu import option_menu
 
 
 # loading the saved models
 
-diabetes_model = pickle.load(open('mode_aeration_saved', 'rb'))
+diabetes_model = joblib.load('model_green_house')
 
-heart_disease_model = pickle.load(open('mode_watering_saved', 'rb'))
+heart_disease_model = joblib.load('model_greenhouse')
 
 parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 
