@@ -9,7 +9,7 @@ from streamlit_option_menu import option_menu
 
 #heart_disease_model = pickle.load(open('mode_watering_saved', 'rb'))
 
-#parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
+parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 
 
 
