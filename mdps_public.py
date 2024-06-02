@@ -64,9 +64,9 @@ if (selected == 'Watering Prediction'):
         diab_prediction = logic_watering_model.predict([[Temperature, Humidity, Moisture, Watering]])
         
         if (diab_prediction[0] == 1):
-          diab_diagnosis = 'Watering Needed'
+          diab_diagnosis = 'Aeration Needed'
         else:
-          diab_diagnosis = 'Enough Soil Moisture'
+          diab_diagnosis = 'Aeration not needed'
         
     st.success(diab_diagnosis)
 
@@ -91,7 +91,7 @@ if (selected == 'Aeration Prediction'):
         Moisture = st.text_input('Moisture')
 
     with col2:
-        Watering = st.text_input('Aeration')
+        Aeration = st.text_input('Aeration')
         
         
      
