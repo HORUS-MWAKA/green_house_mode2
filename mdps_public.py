@@ -102,7 +102,7 @@ if (selected == 'Heart Disease Prediction'):
     # creating a button for Prediction
     
     if st.button('Heart Disease Test Result'):
-        heart_prediction = heart_disease_model.predict([[Temperature, Humidity, Moisture, Aeration]]])                          
+        heart_prediction = heart_disease_model.predict([[Temperature, Humidity, Moisture, Aeration]])                          
         
         if (heart_prediction[0] == 1):
           heart_diagnosis = 'The person is having heart disease'
