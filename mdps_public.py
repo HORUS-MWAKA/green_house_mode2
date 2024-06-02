@@ -16,7 +16,7 @@ def show_entry_fields():
     else:
         Label(master, text="Garden Waterig Needed").grid(row=6)
 
-master = Tk()
+#master = Tk()
 master.title("Greenhouse Predictive Model")
 
 label = Label(master,text = "Greenhouse Predictive Model"
@@ -40,4 +40,4 @@ e4.grid(row=4,column=1)
 
 Button(master,text='Predict', command=show_entry_fields).grid()
 
-mainloop()
+#mainloop()
