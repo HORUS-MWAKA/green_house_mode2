@@ -12,9 +12,9 @@ from streamlit_option_menu import option_menu
 
 # loading the saved models
 
-diabetes_model = pickle.load(open('mode_green_Air.file', 'rb'))
+diabetes_model = pickle.load(open('mode_green_Air', 'rb'))
 
-heart_disease_model = pickle.load(open('model_green_water.file', 'rb'))
+heart_disease_model = pickle.load(open('model_green_water', 'rb'))
 
 parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 
@@ -54,7 +54,7 @@ if (selected == 'Aeration Prediction'):
     with col1:
         Watering = st.text_input('Watering')
 
-   # Pedigree Function value')
+    #Pedigree Function value')
     
 
     
@@ -78,11 +78,15 @@ if (selected == 'Aeration Prediction'):
 
 # Heart Disease Prediction Page
 if (selected == 'Watering Prediction'):
+
+
     
     # page title
     st.title('Watering Prediction using ML')
+
     
     col1, col2, col3 = st.columns(3)
+
 
     with col1:
         Temperature = st.text_input('Temperature')
