@@ -40,7 +40,7 @@ if (selected == 'Watering Prediction'):
     
     
     # getting the input data from the user
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.columns(2)
 
     with col1:
         Temperature = st.text_input('Temperature')
@@ -48,10 +48,10 @@ if (selected == 'Watering Prediction'):
     with col2:
         Humidity = st.text_input('Humidity')
 
-    with col3:
+    with col1:
         Moisture = st.text_input('Moisture')
 
-    with col1:
+    with col2:
         Watering = st.text_input('Watering')
     
     
@@ -79,7 +79,7 @@ if (selected == 'Aeration Prediction'):
     # page title
     st.title('Aeration Prediction using ML')
     
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.columns(2)
 
     with col1:
         Temperature = st.text_input('Temperature')
@@ -87,10 +87,10 @@ if (selected == 'Aeration Prediction'):
     with col2:
         Humidity = st.text_input('Humidity')
 
-    with col3:
+    with col1:
         Moisture = st.text_input('Moisture')
 
-    with col1:
+    with col2:
         Watering = st.text_input('Aeration')
         
         
