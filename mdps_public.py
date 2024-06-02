@@ -28,7 +28,7 @@ with st.sidebar:
                           ['Watering Prediction',
                            'Aeration Prediction',
                            'Parkinsons Prediction'],
-                          icons=['water','air','person'],
+                          icons=['water','smoke','person'],
                           default_index=0)
     
     
