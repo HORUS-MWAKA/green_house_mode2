@@ -28,15 +28,15 @@ with st.sidebar:
                           ['Watering Prediction',
                            'Aeration Prediction',
                            'Parkinsons Prediction'],
-                          icons=['water','smoke','person'],
+                          icons=['water','sun','person'],
                           default_index=0)
     
     
 # Diabetes Prediction Page
-if (selected == 'Diabetes Prediction'):
+if (selected == 'Watering Prediction'):
     
     # page title
-    st.title('Diabetes Prediction using ML')
+    st.title('Watering Prediction using ML')
     
     
     # getting the input data from the user
@@ -60,13 +60,13 @@ if (selected == 'Diabetes Prediction'):
     
     # creating a button for Prediction
     
-    if st.button('Diabetes Test Result'):
+    if st.button('Watering Test Result'):
         diab_prediction = diabetes_model.predict([[Temperature, Humidity, Moisture, Watering]])
         
         if (diab_prediction[0] == 1):
-          diab_diagnosis = 'The person is diabetic'
+          diab_diagnosis = 'Watering Needed'
         else:
-          diab_diagnosis = 'The person is not diabetic'
+          diab_diagnosis = 'Enough Soil Moisture'
         
     st.success(diab_diagnosis)
 
@@ -74,10 +74,10 @@ if (selected == 'Diabetes Prediction'):
 
 
 # Heart Disease Prediction Page
-if (selected == 'Heart Disease Prediction'):
+if (selected == 'Aeration Prediction'):
     
     # page title
-    st.title('Heart Disease Prediction using ML')
+    st.title('Aeration Prediction using ML')
     
     col1, col2, col3 = st.columns(3)
 
@@ -101,12 +101,12 @@ if (selected == 'Heart Disease Prediction'):
     
     # creating a button for Prediction
     
-    if st.button('Heart Disease Test Result'):
+    if st.button('Aeration Test Result'):
         heart_prediction = heart_disease_model.predict([[Temperature, Humidity, Moisture, Aeration]])                          
         
         if (heart_prediction[0] == 1):
-          heart_diagnosis = 'The person is having heart disease'
+          heart_diagnosis = 'Aeration Needed'
         else:
-          heart_diagnosis = 'The person does not have any heart disease'
+          heart_diagnosis = 'No Aeration'
         
     st.success(heart_diagnosis)
