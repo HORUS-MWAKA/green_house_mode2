@@ -1,3 +1,6 @@
+from tkinter import *
+import joblib
+
 def show_entry_fields():
     p1=float(e1.get())
     p2=int(e2.get())
