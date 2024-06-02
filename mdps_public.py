@@ -40,7 +40,7 @@ if (selected == 'Watering Prediction'):
     
     
     # getting the input data from the user
-    col1, col2, col3 = st.columns(2)
+    col1, col2 = st.columns(2)
 
     with col1:
         Temperature = st.text_input('Temperature')
@@ -79,7 +79,7 @@ if (selected == 'Aeration Prediction'):
     # page title
     st.title('Aeration Prediction using ML')
     
-    col1, col2, col3 = st.columns(2)
+    col1, col2 = st.columns(2)
 
     with col1:
         Temperature = st.text_input('Temperature')
