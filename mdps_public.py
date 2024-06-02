@@ -1,4 +1,4 @@
-import pickle
+ import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
@@ -13,39 +13,26 @@ parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 
 
 
-# sidebar for navigation
-with st.sidebar:
-    
-    selected = option_menu('Multiple Disease Prediction System',
-                          
-                          ['Diabetes Prediction',
-                           'Heart Disease Prediction',
-                           'Parkinsons Prediction'],
-                          icons=['activity','heart','person'],
-                          default_index=0)
-    
-    
-# Diabetes Prediction Page
-if (selected == 'Diabetes Prediction'):
+
     
     # page title
-    st.title('Diabetes Prediction using ML')
+st.title('Diabetes Prediction using ML')
     
     
     # getting the input data from the user
-    col1, col2, col3 = st.columns(3)
+col1, col2, col3 = st.columns(3)
 
-    with col1:
-        Temperature = st.text_input('Temperature')
+with col1:
+    Temperature = st.text_input('Temperature')
 
-    with col2:
-        Humidity = st.text_input('Humidity')
+ with col2:
+    Humidity = st.text_input('Humidity')
 
-    with col3:
-        Moisture = st.text_input('Moisture')
+ with col3:
+    Moisture = st.text_input('Moisture')
 
-    with col1:
-        Watering = st.text_input('Watering')
+with col1:
+    Watering = st.text_input('Watering')
     
     
 
