@@ -1,3 +1,8 @@
+import pickle
+import joblib
+import streamlit as st
+from streamlit_option_menu import option_menu
+
 def show_entry_fields():
     p1=float(e1.get())
     p2=int(e2.get())
