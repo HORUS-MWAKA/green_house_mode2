@@ -25,10 +25,10 @@ col1, col2, col3 = st.columns(3)
 with col1:
     Temperature = st.text_input('Temperature')
 
- with col2:
+with col2:
     Humidity = st.text_input('Humidity')
 
- with col3:
+with col3:
     Moisture = st.text_input('Moisture')
 
 with col1:
