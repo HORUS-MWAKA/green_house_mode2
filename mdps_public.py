@@ -14,9 +14,9 @@ from streamlit_option_menu import option_menu
 
 logic_watering_model = pickle.load(open('svmlogic_watering_model.sav', 'rb'))
 
-logic_aeration_model = pickle.load(open('logic_aeration_model.sav', 'rb'))
+#logic_aeration_model = pickle.load(open('logic_aeration_model.sav', 'rb'))
 
-parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
+#parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 
 
 
